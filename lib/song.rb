@@ -1,3 +1,5 @@
+require 'pry'
+
 class Song # create songs & send artist name STRING to ARTIST CLASS
   attr_accessor :name, :artist
   def initialize(name)
