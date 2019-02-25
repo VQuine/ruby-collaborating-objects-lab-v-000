@@ -23,7 +23,7 @@ class Song # create songs & send artist name STRING to ARTIST CLASS
 
 
     #return new song instance
-    self
+    song_object
   end
 
 end
