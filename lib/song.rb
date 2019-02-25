@@ -26,6 +26,6 @@ class Song # create songs & send artist name STRING to ARTIST CLASS
     #return new song instance
     song_object
   end
-  
+
 
 end
