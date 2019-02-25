@@ -19,6 +19,8 @@ class Song # create songs & send artist name STRING to ARTIST CLASS
     #associate new song instance with an artist
     artist_object = Artist.find_or_create_by_name(artist_name)
 
+    song_object.artist = artist_object
+    
 
     #return new song instance
     song_object
