@@ -6,7 +6,8 @@ class Song # create songs & send artist name STRING to ARTIST CLASS
   end
 
   def artist_find_or_create(name) ######DOES THIS NEED TO EXIST OR CAN I CALL STRAIGHT FROM ARTIST CLASS????
-    Artist.find_or_create_by_name(name)
+    obj = Artist.find_or_create_by_name(name)
+    obj.save
   end
 
   def self.new_by_filename(filename)
@@ -25,5 +26,6 @@ class Song # create songs & send artist name STRING to ARTIST CLASS
     #return new song instance
     song_object
   end
+  
 
 end
